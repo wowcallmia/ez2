@@ -1,0 +1,509 @@
+html, body, #app  {
+  
+}
+
+a.active {
+  color: orange;
+}
+
+
+.payment-stepper {
+  margin-top: 25px;
+  bottom: 115px;
+  position: absolute;
+  margin-left: -4px;
+}
+
+.page-bottom {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 50px;
+}
+
+#h3billing{
+  padding-right: 80px;
+}
+
+#payment-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  font-family: Roboto;
+  position: absolute;
+  background-image: linear-gradient(158deg, #57b2f2, #e188e8 86%, #f881e7);
+  padding: 4%;
+
+  #payment-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 310px;
+
+  }
+  .page-title {
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .page-subtitle {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: -30px;
+  }
+
+  .price-tag {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-bottom: 50px;
+    margin-top: 20px;
+
+    p {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      color: #7ea6ef;
+    }
+
+    p:first-child {
+      font-size: 11px;
+      margin-top: 15px;
+      margin-bottom: -10px;
+    }
+  }
+
+  label {
+    width: 91px;
+    height: 13px;
+    opacity: 0.5;
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: absolute;
+  }
+
+  input {
+    margin-right: 20px;
+  }
+
+  .user-info {
+    width: 75%;
+  }
+
+  .billing-title {
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    text-transform: uppercase;
+  }
+
+  .billing-info {
+    width: 75%;
+
+    .state {
+      margin-left: 5px;
+
+      select {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .card-info {
+    margin-top: 20px;
+    width: 75%;
+
+    div {
+      margin-top: 10px;
+
+      input {
+        margin-top: 10px;
+      }
+      label {
+        margin-top: -15px;
+      }
+
+    }
+  }
+
+  #payment-submit {
+    position: absolute;
+    width: 248px;
+    height: 46px;
+    border-radius: 100px;
+    background-color: #0a163b;
+    box-shadow: 0 0 20px 0 #6f58ab;
+    color: #fff;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    bottom: 0;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
+
+// CSS for SignaturePad component of ConfirmationPage
+// CSS for SignaturePad component of ConfirmationPage
+// CSS for SignaturePad component of ConfirmationPage
+#confirmation-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  font-family: Roboto;
+  position: absolute;
+  background-image: linear-gradient(158deg, #57b2f2, #e188e8 86%, #f881e7);
+  padding: 5%;
+
+  #submit {
+    position: absolute;
+    width: 248px;
+    height: 46px;
+    border-radius: 100px;
+    background-color: #0a163b;
+    box-shadow: 0 0 20px 0 #6f58ab;
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+}
+
+.m-signature-pad {
+  position: absolute;
+  font-size: 10px;
+  width: 700px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  margin-left: -350px;
+  margin-top: -120px;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.08) inset;
+  border-radius: 4px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.m-signature-pad--body {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: 20px;
+  bottom: 60px;
+  border: 1px solid #f4f4f4;
+}
+
+.m-signature-pad--body
+  canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.02) inset;
+  }
+
+.m-signature-pad--footer {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  height: 40px;
+}
+
+.m-signature-pad--footer
+  .description {
+    color: #C3C3C3;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 1.8em;
+  }
+
+.m-signature-pad--footer
+  .button {
+    position: absolute;
+    bottom: 0;
+  }
+
+.m-signature-pad--footer
+  .button.clear {
+    left: 0;
+  }
+
+.m-signature-pad--footer
+  .button.save {
+    right: 0;
+  }
+
+@media screen and (max-width: 1024px) {
+  .m-signature-pad {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    min-width: 250px;
+    min-height: 140px;
+    margin: 5%;
+  }
+  #github {
+    display: none;
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .m-signature-pad {
+    margin: 10%;
+  }
+}
+
+@media screen and (max-height: 320px) {
+  .m-signature-pad--body {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 32px;
+  }
+  .m-signature-pad--footer {
+    left: 20px;
+    right: 20px;
+    bottom: 4px;
+    height: 28px;
+  }
+  .m-signature-pad--footer
+    .description {
+      font-size: 1em;
+      margin-top: 1em;
+    }
+}
+
+
+
+
+#homepage-wrapper {
+  display: flex;
+  // justify-content: center;
+  // flex-direction: column;
+  // align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-image: linear-gradient(156deg, #f39855, #b681f8);
+  overflow: scroll;
+}
+
+#homepage-banner {
+  width: 55%;
+  height: 55%;
+}
+
+#homepage-banner-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#homepage {
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  width: 75%;
+}
+
+#continue-label {
+  font-size: 16pt;
+}
+
+#continue-button {
+  width: 248px;
+  height: 46px;
+  border-radius: 100px;
+  border: none;
+  background-color: #816088;
+  box-shadow: 0 0 20px 0 #a867a6;
+}
+
+
+// END of SignaturePad component of ConfirmationPage
+// END of SignaturePad component of ConfirmationPage
+// END of SignaturePad component of ConfirmationPage
+
+.confirmationTitle {
+  width: 359px;
+  height: 47px;
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.Rectangle-5 {
+  width: 218px;
+  height: 38px;
+  text-align: center;
+  border-radius: 19px;
+  border: solid 1px #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  & > a {
+    text-decoration: none;
+  }
+}
+
+.step-oval {
+  width: 12px;
+  height: 12px;
+  background-color: clear;
+  box-shadow: 0 0 8px 0 #9c49b0;
+  display: inline-block;
+  margin-left: 14.5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.step-oval-active {
+  background-color: #ffffff;
+}
+
+.confirmation-stepper {
+  position: absolute;
+  bottom: 110px;
+  margin-left: -10px;
+
+}
+
+.finish-page {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),linear-gradient(158deg, #57b2f2, #e188e8 86%, #f881e7);
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+}
+
+.rocket {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 210.4px;
+  height: 210.6px;
+  top: 200px;
+}
+
+.rocket-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 430px;
+  width: 524px;
+  height: 70px;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+#share { 
+  position:absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 500px;
+  width: 397px;
+  height: 56px;
+  border-radius: 28px;
+  background-color: #0a163c;
+  box-shadow: 0 0 20px 0 #7c4f8c;
+  background-color: #0a163b;
+  color: #fff;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  text-decoration: none;
+
+  & > span {
+    display: inline-block;
+    margin-top: 17px;
+  }
+
+}
+.common-button {
+    width: 248px;
+    height: 46px;
+    border-radius: 100px;
+    background-color: #0a163b;
+    box-shadow: 0 0 20px 0 #6f58ab;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+.first-stepper {
+    text-align: center;
+    display: inline-block;
+    margin-left: 77px;
+    margin-bottom: 15px;
+}
